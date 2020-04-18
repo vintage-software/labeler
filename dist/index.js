@@ -3531,7 +3531,7 @@ function run() {
             }
         }
         catch (error) {
-            core.error(error);
+            console.log(error);
             core.setFailed(error.message);
         }
     });

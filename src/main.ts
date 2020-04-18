@@ -35,7 +35,7 @@ async function run() {
       await addLabels(client, prNumber, labels);
     }
   } catch (error) {
-    core.error(error);
+    console.log(error);
     core.setFailed(error.message);
   }
 }
